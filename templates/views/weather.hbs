@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {{>links}}
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    {{>navbar}}
+    <!-- Hero container -->
+    <div class="fluid-container main_header weather_app">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+
+          <div class="main_container">
+            <h1 class="text_weather">Enter your city: </h1>
+            <form class="temp_form">
+              <input type="search" id="cityname" autocomplete="off">
+              <i id="submit_btn" class="fa fa-search"></i>
+            </form>
+          </div>
+
+          <div class="center_align">
+          <div class="box hide_data">
+            <div class="wave -one"></div>
+            <div class="wave -two"></div>
+            <div class="wave -three"></div>
+
+            <div id="temp_status"></div>
+
+            <div class="info">
+              <h2 id="city_name"><i class="fas fa-street-view"></i></h2>
+              <h3 id="date"></h3>
+              <p id="day"></p>
+              <h1 id="temp"><span id="org_temp"></span>&deg;C</h1>
+              <!-- <p id="temp_status"></p> -->
+            </div>
+          </div>
+        </div>
+
+          <!-- <div class="temp_info">
+            <div class="top_layer">
+              <p id="day">Today</p>
+              <p id="date">Date</p>
+            </div>
+            <div class="mid_layer">
+              <p id="city_name"></p>
+              <div class="mid_layer data_hide">
+                <p id="temp">0 <sup>o</sup> <span>C</span></p>
+                <p id="temp_status">Cloud</p>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+
+    {{>footer}}
+
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
